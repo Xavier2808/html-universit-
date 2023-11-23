@@ -7,13 +7,16 @@
         background-color: olive;
         padding: 30px;
       }
-
+      /* chiedo al css di prendere tuti i paragrafi a prescindere da dove si trovino abbiamno uno sofndo di colore oliva e uno spazio (non sicuro di questa info devo studiare) di 30 px */
       #titlo-1 {
         background-color: paleturquoise;
         padding: 3px;
+
+        /* chiedo al css di prendere il tag (ricordiamo che è unico per ogni file html) con nome titolo-1 abbiamno uno sofndo di colore verdeaqua e uno spazio (non sicuro di questa info devo studiare) di 3 px*/
       }
       .ZIO {
         font-size: 66px;
+        /* chiedo che il fontsize di tutte le classi con nome zio abbiamno grandezza 66pz */
       }
     </style>
     <!-- per le classi uso il . -->
@@ -21,12 +24,12 @@
     <!-- per gli elementi non uso niente -->
   </head>
   <body>
-    mr zio perone
     <h1>Titolone Figo</h1>
-    abbiamo fino a h6
+    <!-- abbiamo fino a h6 h1 è il più grande  -->
     <div>
-      non vuol dirre nulla ma è utalizzabile come riga
+      <!-- div è il contenitore più importante che abbiamo  -->
       <div style="background-color: rgb(240, 145, 22)">
+        <!-- possimo usare questo contenitore per usare css e colorare/decorare la nostra pagina web -->
         <h1>Ciao questa è prova</h1>
       </div>
       <div>
@@ -34,37 +37,36 @@
       </div>
       <div>
         <p>questo è una prova paragrafo</p>
-        paragrafo
+        <!-- paragrafo e ricordiamo che va a CAPO-->
       </div>
     </div>
-    <p>kjdnd</p>
-    paragrafo
 
-    <br />uhhvjvh a capo senza spazio
+    <br />uhhvjvh
+    <!-- br ci fa andare a capo senza nessuno spazion di tabulazione -->
 
     <hr />
-    propv a capo senza spazio con linea formattazione testo
+    prova
+    <!-- a capo senza spazio con linea formattazione testo -->
 
     <p>
       questa è una parola in <b>grassetto</b>, questa è una parola in
       <i>corsivo</i>, quresta è una parola in <u>sottolineato </u>.
     </p>
 
+    <!-- da ricordare che <b></b> sia il grassetto, per corsivo uso <i></i>, per sottolineato uso <u></u> (quest'ultimo è sconsigliato perche il sottolineato molto speso è collegato ai link) -->
     <p>
       posso usare anche <strong>un altro tag</strong>
+
       <br />
       anche per il <em>corsivoooo</em>
     </p>
-    .
+    <!-- posso usare anche <strong></strong> per il grassetto e <em></em> per il corsivo -->
 
     <a target="_blank" href="https://google.es"
       >questo è un link ma più figoooooooo</a
     >
-    <p>blank serve per far aprire il link in una nuova scheda</p>
+    <!-- <a href=""></a> è letteralmente una ancora dove possiamo collegare le nostri testi a dei link target="_blank" serve per far aprire il link in una nuova scheda -->
 
-    <a target="_blank" href="https://youtu.be/JRJNvxoh844?si=AZKimifaRvvFWhXL"
-      >1:24:53</a
-    >
     <p>
       <a target="_blank" href="https://youtu.be/9yBTokZtapE?si=7w2imaSsW9IHCs3j"
         >daq guardare dopo</a
@@ -75,8 +77,9 @@
       >da guardare per ultimo</a
     >
 
-    <img src="img01.jpg" width="444px" height="555px" /> (solitamente si usa o
-    altezzza o larghezza ) ricordarisi di fare delle foto ottimizzate
+    <img src="img01.jpg" width="444px" height="555px" />
+    <!-- (solitamente si usa o altezzza(height) o larghezza(width) ) ricordarisi di fare delle foto ottimizzate -->
+    introduzione alle immagini
     <img src="Nuova cartella/img01.jpg" alt="4444" />
     <img
       src="C:\Users\Cec36\OneDrive - Università degli Studi di Padova\Desktop/1.png"
@@ -86,7 +89,8 @@
       src="https://files.worldwildlife.org/wwfcmsprod/images/Mountain_Gorilla_Silverback_WW22557/story_full_width/36fcoamev0_Mountain_Gorilla_Silverback_WW22557.jpg"
       alt="378"
     />
-
+    <!-- INTRODUZIONE ALLE IMMAGINI; src è l' indirizzo ( se parliamo di un immagiine nel locale) oppure può essere un link di indirizzo (se prendo un immagine dal web) -->
+    <!-- alt invece è un testo ALTERNATIVO nel caso ikl browser non riuscisse a riprodurre l'immagine -->
     video:
     <p>
       <video height="699" controls autoplay muted>
@@ -97,11 +101,11 @@
         il tuo browser non suporta il video
       </video>
     </p>
+    <!-- questo pargrfo sopra è un modo alternatuivo di fare un alt nel caso il browser non riuscisse a riprodurre il video -->
 
-    <p>
-      ricordarsi di mettere controls sotto video e di mettere type sotto sorce
-    </p>
-    se vuoi puoi mettere anhe l'autoplay e mutato per rendere un video un gif
+    <!-- ricordarsi di mettere controls sotto video e di mettere type sotto sorce -->
+
+    <!-- se vuoi puoi mettere anhe l'autoplay e mutato per rendere un video un gif -->
 
     <h3>liste non numerate</h3>
     lista della spesa: <br />
@@ -111,12 +115,7 @@
       <li>spritz</li>
     </ul>
 
-    l' elemento
-    <ul>
-      è l'undorred list
-    </ul>
-    e per fare le liste puntate faccio direttamente il ccomando
-    <li></li>
+    <!-- l' elemento  <ul> è l'undorred list  </ul>   e per fare le liste puntate faccio direttamente il ccomando <li></li>-->
 
     <h3>liste numerate</h3>
     classifica formula 1 <br />
@@ -126,12 +125,7 @@
       <li>spritz</li>
     </ol>
 
-    l' elemento
-    <ol>
-      è l'orderned list
-    </ol>
-    e per fare le liste puntate faccio direttamente il ccomando
-    <li></li>
+    <!-- l' elemento  <ol>   è l'orderned list  </ol> e per fare le liste puntate faccio direttamente il ccomando <li></li> -->
 
     <h3>embendare</h3>
     <br />elementi che sono incormportati
@@ -146,8 +140,8 @@
       allowfullscreen
     >
     </iframe>
-    basta andare su yt e vai su incorpota sotto la confivisione INTRODUZIONE AL
-    CSS
+    <!-- basta andare su yt e vai su incorpota sotto la voce confivisione  -->
+    INTRODUZIONE AL CSS
     <p
       style="
         color: greenyellow;
@@ -203,6 +197,5 @@
       </ol>
     </div>
     <!-- iCLASSE è SIMILE AL ID E NON H0 VINCOLI di NOMI-->
-    <!--provs oprovs-->
   </body>
 </html>
