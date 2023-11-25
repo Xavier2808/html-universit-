@@ -1,4 +1,10 @@
 body {
-    background-color: blanchedalmond;
-    /* cosi dicendo quando importerò il mio fil css su uno html, di default avra lo sfondo color mandorla */
+  background-color: blanchedalmond;
+  /* cosi dicendo quando importerò il mio fil css su uno html, di default avra lo sfondo color mandorla */
 }
+
+p {
+  color: green;
+  background-color: aliceblue;
+}
+/* 53.53 */
