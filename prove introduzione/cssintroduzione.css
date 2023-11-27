@@ -7,4 +7,30 @@ p {
   color: green;
   background-color: aliceblue;
 }
-/* 53.53 */
+
+div {
+    color: green;
+}
+.testoverde.sfondorosso{
+  color: green;
+  /* seleziono tuttI gli elementi che hanno ENTRAMBE LE CLASSI */
+}
+
+h1.testoverde{
+  color: green;
+}
+/* Posso selezionare tutti gli elementi di un determinato tipo che hanno una determinata classe facendo cosi */
+/* posso fare la stessa cosa con l'id */
+div p#primo-titolo {
+  font-size: 48px;
+  /* cosi facendo seleziono tutti i paragrafi con id primo titolo all'interno dei div */
+}
+/* se voglio selezione un denterminato elemento ALL'INTERNO DI UN ALTRO PARAGRAFO ALLORA USO */
+
+.testoverde, .sfondorosso{
+  padding: 5%;
+  /* vado a prendere come riferimento tutti quei elementi che O hanno come classe testo verde OPPURE hanno classe sfondo rosa */
+}
+/* per riassumere SE VOGLIO SELEZIONE UN ELEMENTO/CLAASE/ID ALL'INTERNO DI UN ALTRO ELEMENTO (che sia senza classe o li abbia non cambia) USO LO SPAZIO
+SE VOGLIO SELEZIONARE TUTTE QUEI ELEMENTI CON UNO DEI DUE/TRE... CLASSI/ID/ELEMENTI SELEZIONATI USO LA VIRGOLA E A CAPO */
+/* 4:15:03 */

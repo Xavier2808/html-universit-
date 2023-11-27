@@ -1,0 +1,81 @@
+/* per l'elenco di tuttle le proprietà cerco su internet css cheatsheet (es: https://websitesetup.org/css3-cheat-sheet/) */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* posso andare da internet  https://fonts.google.com e cercare il font più adatto che voglio importare , cosa da andare a seleziomnararlo e importarlo nel css e di utlizzarlo nella font family successivamente */
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap");
+
+body {
+  color: #4a5240;
+  background: #c6caed;
+  text-align: left;
+  font-size: 16px;
+  /* font-family: Arial, Helvetica, sans-serif; **stiamo scelgiaendo che stile applicare nella pagina ** */
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Montserrat", sans-serif;
+}
+
+h2,
+h1 {
+  font-family: "Fredoka", sans-serif;
+  color: #a28497;
+  text-align: center;
+}
+/* posso trovare una palette di colori nel sito: https://coolors.co/c6caed-ada8be-a28497-6f5e5c-4a5240 */
+
+h1 {
+  text-decoration: underline overline;
+  padding-top: 0px;
+  margin-top: 0px;
+  /* faccio cosi perche sia l'h1 e sia p hanno del padding/margin di default */
+}
+
+h2 {
+  font-weight: normal;
+}
+div#contenutore-pagina {
+  /* background: #ADA8BE; */
+  max-width: 800px;
+  margin: 0px auto 0px auto;
+}
+
+div#testata {
+  background: #6f5e5c;
+  /* width: 300px; */
+  /* height: 250px; */
+  /* dimensioni in termini assoluti */
+  /* overflow: auto; */
+  /* cercare su internet l'overfliow !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  width: 90%;
+  min-width: 350px;
+  /* cosi chiedo di non scendere mai sotto i 350 px */
+  /* margin-left: 5%; */
+  /* cosi centro il box al centro dell pagina */
+  /* margin: 100PX 30px 50px 210px; */
+  /* così fcendo seleziono il margine per ogni lato (primo valore margien lto, seocndo valore marigne destro, teroz valore margine sotto, qurto valore margine sx,(poisso fare come imput solo due valori (margin : 200px 300px;) per fre marine in alto e basso di 200 px e a dx e sx di 300 px) */
+  margin: 20px 0px 50px;
+  padding: 25px;
+}
+
+#testata p {
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  /* faccio cosi perche sia l'h1 e sia p hanno del padding/margin di default */
+}
+/* metto in grassetto tutti i paragrafi che saranno all'interno del id testata */
+
+/* voglio togliere il grasetto dai h2 */
+img.immagine-natura {
+  width: 64%;
+  min-width: 250px;
+}
+
+div#piepagina {
+  color: #c6caed;
+  background: #4a5240;
+}
+#piepagina p {
+  font-style: italic;
+}
+/* 4:15:03 */
