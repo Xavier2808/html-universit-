@@ -13,10 +13,10 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; **stiamo scelgiaendo che stile applicare nella pagina ** */
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   font-family: "Montserrat", sans-serif;
+ 
 }
 
-h2,
-h1 {
+h2, h1 {
   font-family: "Fredoka", sans-serif;
   color: #a28497;
   text-align: center;
@@ -33,6 +33,7 @@ h1 {
 h2 {
   font-weight: normal;
 }
+
 div#contenutore-pagina {
   /* background: #ADA8BE; */
   max-width: 800px;
@@ -40,20 +41,18 @@ div#contenutore-pagina {
 }
 
 div#testata {
-  background: #6f5e5c;
   /* width: 300px; */
   /* height: 250px; */
   /* dimensioni in termini assoluti */
   /* overflow: auto; */
   /* cercare su internet l'overfliow !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  width: 90%;
-  min-width: 350px;
-  /* cosi chiedo di non scendere mai sotto i 350 px */
-  /* margin-left: 5%; */
-  /* cosi centro il box al centro dell pagina */
   /* margin: 100PX 30px 50px 210px; */
   /* così fcendo seleziono il margine per ogni lato (primo valore margien lto, seocndo valore marigne destro, teroz valore margine sotto, qurto valore margine sx,(poisso fare come imput solo due valori (margin : 200px 300px;) per fre marine in alto e basso di 200 px e a dx e sx di 300 px) */
-  margin: 20px 0px 50px;
+  background: #6f5e5c;
+  width: 80%;
+  min-width: 350px;
+  /* cosi chiedo di non scendere mai sotto i 350 px */
+  margin: 0px auto 25px auto;
   padding: 25px;
 }
 
@@ -61,8 +60,16 @@ div#testata {
   font-weight: bold;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  margin-top: 0px;
   /* faccio cosi perche sia l'h1 e sia p hanno del padding/margin di default */
 }
+
+#testata h1 {
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    /* faccio cosi perche sia l'h1 e sia p hanno del padding/margin di default */
+  }
 /* metto in grassetto tutti i paragrafi che saranno all'interno del id testata */
 
 /* voglio togliere il grasetto dai h2 */
@@ -79,3 +86,17 @@ div#piepagina {
   font-style: italic;
 }
 /* 4:15:03 */
+div#contenuto{
+
+    min-height:70vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+div#piepagina{
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+}

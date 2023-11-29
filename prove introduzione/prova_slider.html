@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #slider-container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .slider-img {
+      display: none;
+      
+      height: 100vh;
+      transition: opacity 0.8s ease-in-out;
+    }
+
+    #prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: xx-large; 
+}
+
+#next:hover,
+#prev:hover {
+  background-color: black;
+  transform: scale(1.2);
+  color: yellow;
+}
+
+    #prev { left: 10px; }
+    #next { right: 10px; }
+  </style>
+</head>
+<body>
+
+    <div id="slider-container">
+        <img
+          class="slider-img"
+          src="https://pianetabambini.it/wp-content/uploads/2013/05/Numero-1-Colorare.png"
+          alt="Image 1"
+        />
+        <img
+          class="slider-img"
+          src="https://pianetabambini.it/wp-content/uploads/2013/05/Numero-2-Colorare.png"
+          alt="Image 2"
+        />
+        <img
+          class="slider-img"
+          src="https://pianetabambini.it/wp-content/uploads/2013/05/Numero-3-Colorare.png"
+          alt="Image 3"
+        />
+  
+        <button id="prev" onclick="changeSlide(-1)">‹</button>
+        <button id="next" onclick="changeSlide(1)">›</button>
+      </div>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slider-img');
+  const totalSlides = slides.length;
+  let timer;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.style.display = 'block';
+        slide.style.opacity = '1';
+      } else {
+        slide.style.display = 'none';
+        slide.style.opacity = '0';
+      }
+    });
+  }
+
+  function changeSlide(direction) {
+    clearTimeout(timer);
+    slides.forEach((slide) => {
+      slide.style.transition = 'opacity 0.8s ease-in-out';
+    });
+
+    currentSlide += direction;
+    if (currentSlide >= totalSlides) {
+      currentSlide = 0;
+    } else if (currentSlide < 0) {
+      currentSlide = totalSlides - 1;
+    }
+
+    showSlide(currentSlide);
+
+    // Azzeramento del timer quando l'utente preme una freccia
+    timer = setTimeout(autoChangeSlide, 3500);
+  }
+
+  function autoChangeSlide() {
+    slides.forEach((slide) => {
+      slide.style.transition = 'none';
+    });
+
+    changeSlide(1);
+  }
+
+  // Cambia automaticamente l'immagine ogni 3,5 secondi
+  timer = setTimeout(autoChangeSlide, 3500);
+
+  // Mostra la prima immagine all'avvio
+  showSlide(currentSlide);
+</script>
+
+</body>
+</html>
+
